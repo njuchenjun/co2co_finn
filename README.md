@@ -109,16 +109,25 @@
 
 ## 编译与运行
 
-代码是普通 Fortran，`.F90` 中含 `#define`，需要预处理：
+源码在神经网络前向计算中调用 BLAS（`dgemv`、`dgemm`、`ddot`），对应的编译环境是 **ifort + MKL**。以 `src/` 为工作目录：
 
 ```bash
-cd src
-gfortran -cpp -O2 -DNATOM=5 -c pes_co2co_finn.F90
-gfortran -cpp -O2 -DNATOM=5 -c energy1_dr.F
-gfortran -cpp -O2 -c pes_co2_nn.F90
+# 编译目标文件
+ifort -fpp -DNATOM=5 -O2 -c pes_co2co_finn.F90 energy1_dr.F pes_co2_nn.F90
+
+# 与自己的驱动程序一起链接，BLAS 由 MKL 提供
+ifort -mkl -o your_program your_program.o energy1_dr.o pes_co2co_finn.o pes_co2_nn.o
 ```
 
-`energy1_dr.F` 使用的是 `#     DEFINE NATOM 5` 这种带缩进的旧式预处理指令，gfortran 会报 `invalid preprocessing directive`；用命令行 `-DNATOM=5 -DNBOND=10` 提供同样的宏（或删掉这类行）即可通过预处理。权重文件按运行时目录 `./` 读取，可执行程序在 `src/` 下运行即可直接读到位。
+几点说明：
+
+- `-fpp` 是必需的：`pes_co2co_finn.F90`、`pes_co2_nn.F90` 里有 `#define pesdir "./"`，`energy1_dr.F` 里用的是 `#     DEFINE NATOM 5` 这类旧式指令；`NATOM` 也可以由命令行 `-DNATOM=5` 给出，`NBOND` 由文件内那一行推得 10。
+- `-mkl` 在链接阶段引入 MKL；改用系统 BLAS 时可替换为 `-lblas`。
+- 可选优化：`-O2 -xHost`（`-xHost` 生成的代码只适配编译机的指令集）。
+- macOS（ifort 经 Rosetta、MKL 在 `/opt/intel/mkl`）链接时还要加两个参数：`-Wl,-syslibroot,$(xcrun --show-sdk-path) -Wl,-rpath,$MKLROOT/lib`。
+- 权重文件按 `pesdir`（默认 `./`）读取，可执行程序在 `src/` 目录下运行时即可直接读到位。
+
+gfortran 对上面这类旧式预处理指令、以及 `pot_co2_cart` 中一处实参秩的检查严格得多，直接用 gfortran 无法编译，因此仓库以 ifort 的构建方式为准。
 
 ## 许可证
 
