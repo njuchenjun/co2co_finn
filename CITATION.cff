@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this code, the potential energy surface or the data, please cite the article below."
+title: "CO-CO2 full-dimensional (9D) potential energy surface"
+abstract: >-
+  9-dimensional potential energy surface for the CO2-CO van der Waals complex,
+  fitted with fundamental-invariant neural networks (FINN) to 65 330
+  counterpoise-corrected CCSD(T)-F12a/aug-cc-pVTZ ab initio points, together
+  with the Fortran evaluation routines, network weights, the full ab initio
+  data set and a Molpro example.
+authors:
+  - family-names: Feng
+    given-names: Yuquan
+  - family-names: Jiang
+    given-names: Yihuang
+  - family-names: Jiang
+    given-names: Zhengyan
+  - family-names: Chen
+    given-names: Jun
+    email: chenjun@fjirsm.ac.cn
+version: 1.0.0
+date-released: "2026-10-22"
+license: MIT
+keywords:
+  - potential energy surface
+  - neural network
+  - FINN
+  - CO2
+  - CO
+  - energy transfer
+  - quasi-classical trajectory
+preferred-citation:
+  type: article
+  title: "Theoretical study of energy transfer between CO and CO2 based on a full-dimensional potential energy surface"
+  authors:
+    - family-names: Feng
+      given-names: Yuquan
+    - family-names: Jiang
+      given-names: Yihuang
+    - family-names: Jiang
+      given-names: Zhengyan
+    - family-names: Chen
+      given-names: Jun
+  journal: "Chinese Journal of Chemical Physics"
+  volume: 38
+  issue: 6
+  start: 875
+  end: 883
+  year: 2025
+  doi: "10.1063/1674-0068/cjcp2409121"

@@ -1,0 +1,19 @@
+# 编译产物
+*.o
+*.mod
+*.smod
+*.a
+a.out
+*.exe
+build/
+
+# macOS
+.DS_Store
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+
+# 本地工作区数据（不随仓库发布）
+.workbuddy/

@@ -1,0 +1,15 @@
+# 一律保留原始字节：数据与权重文件禁止换行符转换
+# （保证与计算目录里的原件逐字节一致，md5 可核对）
+*.dat       -text
+*.txt       -text
+*.out       -text
+data/**     -text
+
+# 源码与文档按文本处理，统一 LF
+*           text=auto eol=lf
+*.F         text eol=lf diff=fortran
+*.F90       text eol=lf diff=fortran
+*.f90       text eol=lf diff=fortran
+*.md        text eol=lf
+*.sh        text eol=lf
+*.cff       text eol=lf
