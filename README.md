@@ -139,5 +139,12 @@ gfortran is considerably stricter about the old-style preprocessing directives a
 
 ## License
 
-- Fortran code under `src/`: MIT, see [LICENSE](LICENSE).
-- *Ab initio* data and network weights under `data/`: CC BY 4.0, with attribution given by the article citation above.
+Everything in this repository — the Fortran sources under `src/`, the network weights and the *ab initio* data under `data/` — is released under the **Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license; the full text is in [LICENSE](LICENSE).
+
+In short:
+
+- **Attribution** — credit the article cited above.
+- **NonCommercial** — commercial use is not permitted; the PES, its weights and the data may not be used in, or as part of, anything primarily intended for commercial advantage or monetary compensation.
+- **ShareAlike** — if you build on this material and distribute your version, it must be released under the same license.
+
+Academic and other non-commercial use is welcome. For commercial licensing, contact the corresponding author.
