@@ -1,6 +1,6 @@
 # CO–CO<sub>2</sub> Full-Dimensional (9D) Potential Energy Surface
 
-Chinese version: [README_CN.md](README_CN.md)
+中文版：[README_CN.md](README_CN.md)
 
 A 9-dimensional potential energy surface for the CO + CO<sub>2</sub> collision, built for studying collisional energy transfer. The interaction energy is fitted with fundamental-invariant neural networks (FINN) to 65 330 CCSD(T)-F12a/aug-cc-pVTZ *ab initio* points (counterpoise-corrected). The repository also contains the neural-network potential of the CO<sub>2</sub> monomer, the complete *ab initio* data set, the fifth (final) fitting run, and one Molpro example.
 
