@@ -9,7 +9,17 @@
 > *Chinese Journal of Chemical Physics*, **2025**, 38(6): 875–883.
 > DOI: [10.1063/1674-0068/cjcp2409121](https://doi.org/10.1063/1674-0068/cjcp2409121)
 
-> **Abstract (EN)** A 9-dimensional potential energy surface for the CO<sub>2</sub>–CO van der Waals complex is constructed with the FINN method from 65 330 counterpoise-corrected CCSD(T)-F12a/aug-cc-pVTZ points, and used in quasi-classical trajectory simulations of rotational energy transfer. This repository hosts the Fortran evaluation routines, the fitted network weights, the full *ab initio* data set, the final (5th) fitting run, and a Molpro example.
+## Abstract
+
+**英文摘要（原文，Chin. J. Chem. Phys. 2025, 38(6): 875–883）**
+
+We present a comprehensive study of the CO2-CO interaction potential using a 9-dimensional (9D) potential energy surface (PES) constructed with the fundamental invariant-neural networks (FINN) method. The PES was generated from 65330 CCSD(T)-F12a/ aug-cc-pVTZ *ab initio* data points, with counterpoise correction, applied to eliminate basis set superposition error (BSSE). We performed quasi-classical trajectory simulations using this PES to investigate the rotational energy transfer dynamics. Our results reveal complex energy transfer mechanisms, with significant rotational excitation and relaxation dependent on collision energy and initial rotational states. The 9D PES provides a more accurate representation of the CO2-CO system, offering new insights into molecular dynamics and interaction mechanisms.
+
+**中文摘要（原文）**
+
+本文利用基本不变量-神经网络方法，构建了CO2与CO分子之间相互作用的9维势能面，并用于碰撞能量传递研究. 势能面基于65330个CCSD(T)-F12a/aug-cc-pVTZ高精度从头算数据，计算中采用了均衡校正以消除基组重叠误差. 以此势能面为基础，通过准经典轨线计算研究了CO2与CO分子间的转动能量转移动力学. 研究结果揭示了其中复杂的能量转移机制，表明产物的转动激发和弛豫性质较大地依赖于初始碰撞能. 这个新的全维势能面能精确描述CO2-CO体系，有望为分子动力学和相互作用机制提供新的理解.
+
+**关键词（原文）**　CO, CO2, Potential energy surface, Reaction dynamics, Energy transfer
 
 ## 引用
 

@@ -2,11 +2,17 @@ cff-version: 1.2.0
 message: "If you use this code, the potential energy surface or the data, please cite the article below."
 title: "CO-CO2 full-dimensional (9D) potential energy surface"
 abstract: >-
-  9-dimensional potential energy surface for the CO2-CO van der Waals complex,
-  fitted with fundamental-invariant neural networks (FINN) to 65 330
-  counterpoise-corrected CCSD(T)-F12a/aug-cc-pVTZ ab initio points, together
-  with the Fortran evaluation routines, network weights, the full ab initio
-  data set and a Molpro example.
+  We present a comprehensive study of the CO2-CO interaction potential using a
+  9-dimensional (9D) potential energy surface (PES) constructed with the
+  fundamental invariant-neural networks (FINN) method. The PES was generated
+  from 65330 CCSD(T)-F12a/ aug-cc-pVTZ ab initio data points, with counterpoise
+  correction, applied to eliminate basis set superposition error (BSSE). We
+  performed quasi-classical trajectory simulations using this PES to investigate
+  the rotational energy transfer dynamics. Our results reveal complex energy
+  transfer mechanisms, with significant rotational excitation and relaxation
+  dependent on collision energy and initial rotational states. The 9D PES
+  provides a more accurate representation of the CO2-CO system, offering new
+  insights into molecular dynamics and interaction mechanisms.
 authors:
   - family-names: Feng
     given-names: Yuquan
