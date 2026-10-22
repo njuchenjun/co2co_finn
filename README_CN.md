@@ -1,5 +1,7 @@
 # CO–CO<sub>2</sub> 全维（9D）势能面
 
+英文版：[README_EN.md](README_EN.md)
+
 面向 CO + CO<sub>2</sub> 碰撞能量传递的 9 维全维势能面：用基本不变量神经网络（fundamental invariant neural network, FINN）拟合 65330 个 CCSD(T)-F12a/aug-cc-pVTZ（含 counterpoise 校正）ab initio 能量点，并配套给出 CO<sub>2</sub> 单体神经网络势、全部 ab initio 原始数据、第 5 次（最终）拟合产物与一个 Molpro 计算样例。
 
 本仓库同时是论文的代码与数据存档：
